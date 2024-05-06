@@ -403,8 +403,8 @@ def main():
                 "report_period": True,
                 "windows": True,
                 "scan_limits": True,
-                "scheduler":True,
-                "init_stage":True,
+                "scheduler": True,
+                "init_stage": True,
             },
         },
         # Pull tickets that were created or modified during the time period.
