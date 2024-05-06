@@ -405,8 +405,6 @@ def main():
                 "scan_limits": True,
                 "scheduler":True,
                 "init_stage":True,
-                
-
             },
         },
         # Pull tickets that were created or modified during the time period.
