@@ -390,6 +390,8 @@ def main():
                 "agency.location": True,
                 "agency.name": True,
                 "agency.type": True,
+                "agency.contacts": True,
+                "key": True,
                 "children": True,
                 "enrolled": True,
                 "networks": True,
@@ -398,6 +400,13 @@ def main():
                 "retired": True,
                 "scan_types": True,
                 "stakeholder": True,
+                "report_period": True,
+                "windows": True,
+                "scan_limits": True,
+                "scheduler":True,
+                "init_stage":True,
+                
+
             },
         },
         # Pull tickets that were created or modified during the time period.
