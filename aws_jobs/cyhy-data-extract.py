@@ -385,27 +385,7 @@ def main():
         # only pull the entire collection every time an extract is run.
         "requests": {
             "query": {},
-            "projection": {
-                "agency.acronym": True,
-                "agency.location": True,
-                "agency.name": True,
-                "agency.type": True,
-                "agency.contacts": True,
-                "key": True,
-                "children": True,
-                "enrolled": True,
-                "networks": True,
-                "period_start": True,
-                "report_types": True,
-                "retired": True,
-                "scan_types": True,
-                "stakeholder": True,
-                "report_period": True,
-                "windows": True,
-                "scan_limits": True,
-                "scheduler": True,
-                "init_stage": True,
-            },
+            "projection": {},
         },
         # Pull tickets that were created or modified during the time period.
         # It's currently possible for a ticket to be created within the time
