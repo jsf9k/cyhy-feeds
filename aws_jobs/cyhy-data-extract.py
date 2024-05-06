@@ -385,6 +385,8 @@ def main():
         # only pull the entire collection every time an extract is run.
         "requests": {
             "query": {},
+            # Note that this empty projection exports all fields, some
+            # of which may contain sensitive data.
             "projection": {},
         },
         # Pull tickets that were created or modified during the time period.
