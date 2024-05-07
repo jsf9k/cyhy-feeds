@@ -388,7 +388,7 @@ def main():
             # Note that this projection exports all fields other than those specified,
             # some of which may contain sensitive data.
             "projection": {
-                 "init_stage": False,
+                "init_stage": False,
                 "report_period": False,
                 "scheduler": False,
             },
