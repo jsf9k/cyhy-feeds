@@ -385,9 +385,13 @@ def main():
         # only pull the entire collection every time an extract is run.
         "requests": {
             "query": {},
-            # Note that this empty projection exports all fields, some
-            # of which may contain sensitive data.
-            "projection": {},
+            # Note that this projection exports all fields other than those specified,
+            # some of which may contain sensitive data.
+            "projection": {
+                "report_period": False,
+                "scheduler": False,
+                "init_stage": False,
+            },
         },
         # Pull tickets that were created or modified during the time period.
         # It's currently possible for a ticket to be created within the time
