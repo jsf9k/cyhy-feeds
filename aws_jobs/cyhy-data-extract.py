@@ -393,7 +393,7 @@ def main():
                 "scheduler": False,
             },
         },
-        "snapshots":{
+        "snapshots": {
             "query": {
                 "owner": {"$in": orgs},
                 "last_change": {
