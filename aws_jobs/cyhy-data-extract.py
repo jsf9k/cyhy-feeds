@@ -393,16 +393,6 @@ def main():
                 "scheduler": False,
             },
         },
-        "snapshots": {
-            "query": {
-                "owner": {"$in": orgs},
-                "last_change": {
-                    "$gte": start_of_data_collection,
-                    "$lt": end_of_data_collection,
-                },
-            },
-            "projection": default_projection,
-        },
         # Pull tickets that were created or modified during the time period.
         # It's currently possible for a ticket to be created within the time
         # period, but modified just after the end of the time period, so this
