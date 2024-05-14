@@ -380,6 +380,16 @@ def main():
             },
             "projection": default_projection,
         },
+        "snapshots": {
+            "query": {
+                "owner": {"$in": orgs},
+                "last_change": {
+                    "$gte": start_of_data_collection,
+                    "$lt": end_of_data_collection,
+                },
+            },
+            "projection": default_projection,
+        },
         # The requests collection does not have a field to indicate either
         # initial creation time or time of last modification. As a result we can
         # only pull the entire collection every time an extract is run.
